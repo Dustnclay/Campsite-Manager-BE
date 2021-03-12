@@ -1,0 +1,24 @@
+{
+  "name": "Campsite-Manager-BE",
+  "version": "1.0.0",
+  "description": "the back end for the campsite manager app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dustnclay/Campsite-Manager-BE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dustnclay/Campsite-Manager-BE/issues"
+  },
+  "homepage": "https://github.com/Dustnclay/Campsite-Manager-BE#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
