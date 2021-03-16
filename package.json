@@ -4,6 +4,7 @@
   "description": "the back end for the campsite manager app",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,13 @@
   },
   "homepage": "https://github.com/Dustnclay/Campsite-Manager-BE#readme",
   "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.95.2",
+    "knex-cleaner": "^1.3.1",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.2"
   }
 }
