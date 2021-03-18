@@ -6,7 +6,7 @@ exports.seed = function(knex) {
         // Inserts seed entries
         return knex('formsData').insert([
           {
-            location:'site 103',
+            location:'103',
             collector:'Dusty Traveler',
             survey:'001',
             groundDisturbance:'yes',
@@ -27,7 +27,7 @@ exports.seed = function(knex) {
             date:'yes'
           },
           {
-            location:'site 103',
+            location:'103',
             collector:'lazy Traveler',
             survey:'002',
             groundDisturbance:'yes',
@@ -48,7 +48,7 @@ exports.seed = function(knex) {
             date:'yes'
           },
           {
-            location:'site 103',
+            location:'103',
             collector:'Nasty Traveler',
             survey:'003',
             groundDisturbance:'no',
