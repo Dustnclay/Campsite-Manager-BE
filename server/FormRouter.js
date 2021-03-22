@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const FormModel = require('./FormModel.js');
 
-router.get('/', (req,res)=> {
+router.get('/', (req,res) => {
     console.log("get to base url")
     FormModel.getAll()
         .then(formData => {
@@ -21,6 +21,6 @@ router.get('/:id', (req,res) => {
         .catch(err =>
             res.status(500).json(err))
 })
-
+ 
 
 module.exports = router;
