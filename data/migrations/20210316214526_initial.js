@@ -20,7 +20,18 @@ exports.up = function(knex, Promise) {
         table.string('socialTrail').notNullable();
         table.string('socialRoad').notNullable();
         table.string('siteDescription').notNullable();
+        table.string('needTrashPickup').notNullable();
+        table.string('needSignageFix').notNullable();
+        table.string('needContainmentRepair').notNullable();
+        table.string('needFireRingRemoval').notNullable();
+        table.string('doneTrashPickup').notNullable();
+        table.string('doneSignageFix').notNullable();
+        table.string('doneContainmentRepair').notNullable();
+        table.string('doneFireRingRemoval').notNullable();
         table.string('date').notNullable();
+        table.string('hours').notNullable();
+        table.string('notes').notNullable();
+        table.string('image').notNullable();
     })
 };
 

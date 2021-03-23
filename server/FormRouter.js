@@ -11,6 +11,17 @@ router.get('/', (req,res) => {
             res.status(500).json(err))
 })
 
+router.post('/', (req,res) => {
+    const newForm = req.body
+    console.log("router.post",req.body)
+    FormModel.postNew(newForm)
+    .then(newForm => {
+        res.status(200).json("form post successful")
+    })
+    .catch(err =>
+        res.status(500).json(err))
+})
+
 router.get('/:id', (req,res) => {
     const location = req.params.id
     console.log("get to /:id")
@@ -21,6 +32,8 @@ router.get('/:id', (req,res) => {
         .catch(err =>
             res.status(500).json(err))
 })
+
+
  
 
 module.exports = router;

@@ -24,7 +24,18 @@ exports.seed = function(knex) {
             socialTrail:'yes',
             socialRoad:'yes',
             siteDescription:'yes',
-            date:'yes'
+            needTrashPickup:false,
+            needSignageFix:false,
+            needContainmentRepair:false,
+            needFireRingRemoval:false,
+            doneTrashPickup:false,
+            doneSignageFix:false,
+            doneContainmentRepair:false,
+            doneFireRingRemoval:false,
+            date:'yes',
+            hours:'1',
+            notes:'none',
+            image:''
           },
           {
             location:'103',
@@ -45,7 +56,18 @@ exports.seed = function(knex) {
             socialTrail:'no',
             socialRoad:'yes',
             siteDescription:'no',
-            date:'yes'
+            needTrashPickup:false,
+            needSignageFix:false,
+            needContainmentRepair:false,
+            needFireRingRemoval:false,
+            doneTrashPickup:false,
+            doneSignageFix:false,
+            doneContainmentRepair:false,
+            doneFireRingRemoval:false,
+            date:'yes',
+            hours:'1',
+            notes:'none',
+            image:''
           },
           {
             location:'103',
@@ -66,9 +88,19 @@ exports.seed = function(knex) {
             socialTrail:'yes',
             socialRoad:'no',
             siteDescription:'yes',
-            date:'yes'
+            needTrashPickup:false,
+            needSignageFix:false,
+            needContainmentRepair:false,
+            needFireRingRemoval:false,
+            doneTrashPickup:false,
+            doneSignageFix:false,
+            doneContainmentRepair:false,
+            doneFireRingRemoval:false,
+            date:'yes',
+            hours:'1',
+            notes:'none',
+            image:''
           }
-
         ]);
       });
   };
