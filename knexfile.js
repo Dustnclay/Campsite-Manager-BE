@@ -26,17 +26,18 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'postgres://putbscmtbqlsxg:9a0370c3206dc193ca28dea86d0ed837cddba667435e83fafa995b566d6e5f28@ec2-23-21-229-200.compute-1.amazonaws.com:5432/d70vnfvun121o5',
-      // user:     'username',
-      // password: ''
+      database: 'process.env.DATABASE_URL',
+    },
+    migrations: {
+      directory: './data/migrations' 
+    },
+    seeds: {
+      directory: './data/seeds'
     },
     pool: {
       min: 2,
       max: 10
     },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
   },
 
   production: {
