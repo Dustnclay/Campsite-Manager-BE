@@ -7,7 +7,6 @@ module.exports= {
 }
 
 function getAll(){
-    console.log("made it to GetAll")
     return db('formsData as f')
     .select('f.location')
 } 
