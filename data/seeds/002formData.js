@@ -241,7 +241,7 @@ exports.seed = function(knex) {
             erosion:'Yes',
             fireRings:'3',
             improvements:'Yes',        
-            contained:'NaturallyContained',
+            contained:'Natural',
             residential:'Yes',
             trash:'1-3G',
             humanWaste:'2-5',
