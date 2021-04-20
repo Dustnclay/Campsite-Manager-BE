@@ -19,7 +19,7 @@ exports.up = function(knex, Promise) {
         table.string('humanWaste').notNullable();
         table.string('socialTrail').notNullable();
         table.string('socialRoad').notNullable();
-        table.string('siteDescription').notNullable();
+        table.string('siteDescription');
         table.string('needTrashPickup').notNullable();
         table.string('needSignageFix').notNullable();
         table.string('needContainmentRepair').notNullable();
@@ -31,24 +31,10 @@ exports.up = function(knex, Promise) {
         table.string('date').notNullable();
         table.string('hours').notNullable();
         table.string('notes').notNullable();
-        table.string('image').notNullable();
+        table.string('image');
     })
 };
 
 exports.down = function(knex, Promise) {
     return knex.schema.dropTableIfExists('formsData');
 };
-
-// exports.up = function(knex, Promise) {
-//     return knex.schema.createTable('users', function(table) {
-//         table.increments();
-//         table.string('email').notNullable();
-//         table.string('password').notNullable();
-//         table.timestamp('created_at').defaultTo(knex.fn.now())
-//         table.timestamp('updated_at').defaultTo(knex.fn.now())
-//       })
-//     }
-    
-//     exports.down = function(knex, Promise) {
-//       return knex.schema.dropTable('users');
-//     }
