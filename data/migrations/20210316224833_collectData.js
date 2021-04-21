@@ -1,7 +1,7 @@
 
 
     exports.up = function(knex, Promise) {
-        return knex.schema.createTable("formsData", table => {
+        return knex.schema.createTable("forms_data", table => {
             table.increments();
             table.string('location').notNullable();
             table.string('collector').notNullable();
