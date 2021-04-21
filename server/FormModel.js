@@ -19,7 +19,7 @@ function getByLocation(location){
 
 async function postNew(newData){
     console.log("whats sent into thedb in formmodel",newData)
-    return db(""forms_data"").insert(newData)
+    return db("forms_data").insert(newData)
  //   try{
  //       await db("forms_data")
    //     .insert(newData)
