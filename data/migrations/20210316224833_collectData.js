@@ -1,6 +1,7 @@
 
-exports.up = function(knex) {
-        return knex.schema.createTable("forms_data", table => {
+
+    exports.up = function(knex, Promise) {
+        return knex.schema.createTable("formsData", table => {
             table.increments();
             table.string('location').notNullable();
             table.string('collector').notNullable();
@@ -31,7 +32,7 @@ exports.up = function(knex) {
             table.string('date').notNullable();
             table.string('hours').notNullable();
             table.string('notes').notNullable();
-            table.string('image');
+            table.string('image').notNullable();
         })
     };
     
