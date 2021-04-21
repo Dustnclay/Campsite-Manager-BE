@@ -1,6 +1,5 @@
 
 exports.up = function(knex) {
-    exports.up = function(knex, Promise) {
         return knex.schema.createTable("formsData", table => {
             table.increments();
             table.string('location').notNullable();
@@ -40,8 +39,3 @@ exports.up = function(knex) {
     exports.down = function(knex, Promise) {
         return knex.schema.dropTableIfExists('formsData');
     };
-};
-
-exports.down = function(knex) {
-  
-};
