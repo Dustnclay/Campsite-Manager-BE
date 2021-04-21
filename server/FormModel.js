@@ -7,12 +7,12 @@ module.exports= {
 }
 
 function getAll(){
-    return db('formsData as f')
+    return db('forms_data as f')
     .select('f.location')
 } 
 
 function getByLocation(location){
-    return db('formsData as f')
+    return db('forms_data as f')
     .where("location", location)
 
 }
@@ -20,7 +20,7 @@ function getByLocation(location){
 async function postNew(newData){
     console.log("whats sent into thedb in formmodel",newData)
     try{
-        await db("formsData")
+        await db("forms_data")
         .insert(newData)
         return newData
 

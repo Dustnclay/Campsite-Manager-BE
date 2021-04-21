@@ -1,10 +1,10 @@
 
 exports.seed = function(knex) {
     // Deletes ALL existing entries
-    return knex('formsData').del()
+    return knex('forms_data').del()
       .then(function () {
         // Inserts seed entries
-        return knex('formsData').insert([
+        return knex('forms_data').insert([
           {
             location:'103',
             collector:'Dusty Traveler',

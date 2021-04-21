@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './data/formsData.db3',
+      filename: './data/forms_data.db3',
       // user:     'username',
       // password: 'password'
     },

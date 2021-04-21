@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-        return knex.schema.createTable("formsData", table => {
+        return knex.schema.createTable("forms_data", table => {
             table.increments();
             table.string('location').notNullable();
             table.string('collector').notNullable();
@@ -36,5 +36,5 @@ exports.up = function(knex) {
     };
     
     exports.down = function(knex, Promise) {
-        return knex.schema.dropTableIfExists('formsData');
+        return knex.schema.dropTableIfExists('forms_data');
     };
