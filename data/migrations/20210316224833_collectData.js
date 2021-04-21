@@ -20,7 +20,6 @@ exports.up = function(knex) {
             table.string('socialTrail').notNullable();
             table.string('socialRoad').notNullable();
             table.string('siteDescription').notNullable();
-            table.string('date').notNullable();
             table.string('needTrashPickup').notNullable();
             table.string('needSignageFix').notNullable();
             table.string('needContainmentRepair').notNullable();
