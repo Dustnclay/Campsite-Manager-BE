@@ -11,10 +11,11 @@ router.get('/', (req,res) => {
 })
 
 router.post('/', (req,res) => {
-    console.log("entering post in form model",req.body)
-    const newForm = JSON.stringify(req.body)
-    console.log("entering post in form model",newForm)
-    FormModel.postNew(newForm)
+//     console.log("entering post in form model",req.body)
+//     const newForm = JSON.stringify(req.body)
+//     console.log("entering post in form model",newForm)
+    const newForm = res.body
+    FormModel.postNew({location:newForm.location})
     .then(newForm => {
         res.status(200).json("form post successful")
     })
