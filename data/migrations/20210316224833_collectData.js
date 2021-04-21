@@ -32,7 +32,7 @@ exports.up = function(knex) {
             table.string('date').notNullable();
             table.string('hours').notNullable();
             table.string('notes').notNullable();
-            table.string('image').notNullable();
+            table.string('image');
         })
     };
     
