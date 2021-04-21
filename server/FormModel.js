@@ -25,7 +25,7 @@ async function postNew(newData){
    //     .insert(newData)
      //   return newData
 
-    }catch (err) {
-        console.log(err)
-    }
+  //  }catch (err) {
+  //      console.log(err)
+//    }
 }
