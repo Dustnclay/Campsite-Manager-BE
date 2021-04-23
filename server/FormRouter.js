@@ -16,7 +16,7 @@ router.post('/', (req,res) => {
 //     console.log("entering post in form model",newForm)
     const newForm = req.body
     FormModel.postNew({location:newForm.location})
-    .then(newForm => {
+    .then(form => {
         res.status(200).json("form post successful")
     })
     .catch(err =>
