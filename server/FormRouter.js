@@ -23,7 +23,7 @@ router.post('/', (req,res) => {
             survey:newForm.survey,
             ground_disturbance:newForm.groundDisturbance,
             disturbed_area:newForm.disturbedArea,
- //           trees_damaged:newForm.treesDamaged,
+            trees_damaged:newForm.treesDamaged,
  //           near_water:newForm.nearWater,
  //           near_trail:newForm.nearTrail,        
  //           erosion:newForm.erosion,
