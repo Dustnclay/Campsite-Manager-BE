@@ -28,7 +28,7 @@ exports.up = function(knex, Promise) {
 //        table.string('done_signage_fix');
 //        table.string('done_containment_repair');
 //        table.string('done_fire_ring_removal');
-//        table.string('date');
+//        table.string('date'); 
 //        table.string('hours');
 //        table.string('notes');
 //        table.string('image');
