@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
         table.string('location');
         table.string('collector');
         table.string('survey');
-//        table.string('ground_disturbance');
+        table.string('ground_disturbance');
 //        table.string('disturbed_area');
 //        table.string('trees_damaged');
 //        table.string('near_water');
