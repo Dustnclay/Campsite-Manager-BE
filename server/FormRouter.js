@@ -36,7 +36,7 @@ router.post('/', (req,res) => {
             social_trail:newForm.socialTrail,
             social_road:newForm.socialRoad,
             site_description:newForm.siteDescription,
- //           need_trash_pickup:newForm.needTrashPickup,
+            need_trash_pickup:newForm.needTrashPickup,
  //           need_signage_fix:newForm.needSignageFix,
  //           need_containment_repair:newForm.needContainmentRepair,
  //           need_fire_ring_removal:newForm.needFireRingRemoval,
