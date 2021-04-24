@@ -21,7 +21,7 @@ exports.up = function(knex, Promise) {
         table.string('social_road');
         table.string('site_description');
         table.string('need_trash_pickup');
-        table.string('need-signage_fix');
+        table.string('need_signage_fix');
         table.string('need_containment_repair');
         table.string('need_fire_ring_removal');
         table.string('done_trash_pickup');
