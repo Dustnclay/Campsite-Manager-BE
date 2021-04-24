@@ -36,18 +36,18 @@ router.post('/', (req,res) => {
             social_trail:newForm.socialTrail,
             social_road:newForm.socialRoad,
             site_description:newForm.siteDescription,
-            need_trash_pickup:newForm.needTrashPickup,
-            need_signage_fix:newForm.needSignageFix,
-            need_containment_repair:newForm.needContainmentRepair,
-            need_fire_ring_removal:newForm.needFireRingRemoval,
+ //           need_trash_pickup:newForm.needTrashPickup,
+ //           need_signage_fix:newForm.needSignageFix,
+ //           need_containment_repair:newForm.needContainmentRepair,
+ //           need_fire_ring_removal:newForm.needFireRingRemoval,
  //           done_trash_pickup:newForm.doneTrashPickup,
  //           done_signage_fix:newForm.doneSignageFix,
  //           done_containment_repair:newForm.doneContainmentRepair,
  //           done_fire_ring_removal:newForm.doneFireRingRemoval,
- //           date:newForm.date,
- //           hours:newForm.hours,
- //           notes:newForm.notes,
- //           image:newForm.image
+            date:newForm.date,
+            hours:newForm.hours,
+            notes:newForm.notes,
+            image:newForm.image
         }
     )
     .then(form => {
