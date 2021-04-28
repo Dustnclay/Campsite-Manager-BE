@@ -88,7 +88,7 @@ exports.seed = function(knex) {
             social_trail:'10-25',
             social_road:'25-100',
             site_description:'site descriptions',
-            need_trash_pickup:ture,
+            need_trash_pickup:true,
             need_signage_fix:true,
             need_containment_repair:true,
             need_fire_ring_removal:true,
