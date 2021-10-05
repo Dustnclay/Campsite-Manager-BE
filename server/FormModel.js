@@ -8,7 +8,7 @@ module.exports= {
 
 function getAll(){
     return db('forms_data as f')
-    .select('f.location')
+    .select('f.location','f.latlng')
 } 
 
 function getByLocation(location){
