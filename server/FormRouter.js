@@ -43,7 +43,8 @@ router.post('/', (req,res) => {
             date:newForm.date,
             hours:newForm.hours,
             notes:newForm.notes,
-            image:newForm.image
+            image:newForm.image,
+            latlng:newForm.latlng
         }
     )
     .then(form => {

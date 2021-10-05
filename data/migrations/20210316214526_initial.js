@@ -32,6 +32,8 @@ exports.up = function(knex, Promise) {
         table.string('hours');
         table.string('notes');
         table.string('image');
+        table.string('latlng');
+
     })
 };
 

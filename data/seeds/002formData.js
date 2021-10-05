@@ -35,7 +35,8 @@ exports.seed = function(knex) {
             date:10102020,
             hours:'1',
             notes:'none',
-            image:''
+            image:'',
+            latlng:{lat:45.8918, lng:123.9615}
           },
           {
            location:'103',
@@ -67,7 +68,9 @@ exports.seed = function(knex) {
             date:10102020,
             hours:'1',
             notes:'none',
-            image:''
+            image:'',
+            latlng:{lat:45.8918, lng:123.9615}
+
           },
           {
            location:'103',
@@ -99,7 +102,8 @@ exports.seed = function(knex) {
             date:10102020,
             hours:'1',
             notes:'none',
-            image:''
+            image:'',
+            latlng:{lat:45.8918, lng:123.9615}
           },
           {
           location:'104',
@@ -131,7 +135,8 @@ exports.seed = function(knex) {
             date:10102020,
             hours:'1',
             notes:'none',
-            image:''
+            image:'',
+            latlng:{lat:47.802109, lng:-123.604355}
           },
           {
             location:'103',
@@ -163,9 +168,10 @@ exports.seed = function(knex) {
             date:10102020,
             hours:'1',
             notes:'none',
-            image:''
+            image:'',
+            latlng:{lat:45.8918, lng:123.9615
+            }
           }
-          
         ]);
       });
   };
