@@ -12,6 +12,7 @@ router.get('/', (req,res) => {
 
 router.post('/', (req,res) => {
     const newForm = req.body
+    console.log('newForm in post',newForm)
     FormModel.postNew(
         {
             location:newForm.location,

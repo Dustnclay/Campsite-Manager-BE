@@ -3,6 +3,27 @@
 module.exports = {
 
   development: {
+
+    //   client: 'mysql',
+    //     connection: {
+    //       host: 'campmandb.c6qcyiyvcjtb.us-west-2.rds.amazonaws.com',
+    //       user: 'admin',
+    //       password: 'bigassword',
+    //       database: 'campmandb',
+    //       charset: 'utf8'
+    //   },
+    //       migrations: {
+    //   directory: './data/migrations' 
+    // },
+    // seeds: {
+    //   directory: './data/seeds'
+    // },
+    //   debug: true,
+    //   pool: {
+    //     min: 2,
+    //     max: 20
+    //   },
+    //   acquireConnectionTimeout: 10000
     client: 'sqlite3',
     connection: {
       filename: './data/forms_data.db3',
